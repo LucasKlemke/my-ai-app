@@ -10,7 +10,7 @@ StudMed é um chatbot de Inteligência Artificial focado em auxiliar estudantes 
 - Prisma ORM — Comunicação com o banco
 - NextAuth — Autenticação
 - OpenAI API — Processamento de linguagem natural
-- Adversel SDK — Integrações e deploy
+- Vercel AI SDK — Integrações e deploy
 
 🎯 Objetivos Principais
 1. Criar um chatbot com respostas precisas baseadas em fontes médicas.
