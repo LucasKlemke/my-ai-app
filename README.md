@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+📚 StudMed
 
-## Getting Started
+StudMed é um chatbot de Inteligência Artificial focado em auxiliar estudantes de medicina, oferecendo respostas baseadas em literatura médica confiável e permitindo o gerenciamento de materiais de estudo.
 
-First, run the development server:
+🚀 Tecnologias Utilizadas
+- Next.js — Frontend e Backend
+- TypeScript — Tipagem estática
+- TailwindCSS + ShadcnUI — Estilização e componentes
+- PostgreSQL (Supabase) — Banco de dados
+- Prisma ORM — Comunicação com o banco
+- NextAuth — Autenticação
+- OpenAI API — Processamento de linguagem natural
+- Adversel SDK — Integrações e deploy
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+🎯 Objetivos Principais
+1. Criar um chatbot com respostas precisas baseadas em fontes médicas.
+2. Implementar funcionalidades de busca, histórico e personalização do estudo.
+3. Garantir usabilidade, performance e escalabilidade do sistema.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+📅 Planejamento de Sprints
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Sprint 1 — Configuração da base e arquitetura
+- Configuração do projeto (Next.js, TypeScript, ESLint, Prettier, Husky, CI/CD).
+- Setup do banco de dados (Supabase + Prisma).
+- Autenticação com NextAuth.
+- Deploy inicial na Vercel.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Sprint 2 — Chat básico e RAG inicial
+- Interface de chat (Tailwind + ShadcnUI).
+- API `/api/chat` conectada à LLM.
+- Upload e indexação de PDFs no banco.
+- Histórico de mensagens por usuário.
 
-## Learn More
+Sprint 3 — Funcionalidades avançadas e personalização
+- Sistema de tópicos de estudo e filtros no RAG.
+- Feedback de respostas (👍/👎).
+- Painel para gerenciamento de materiais.
+- Métricas de uso por usuário.
 
-To learn more about Next.js, take a look at the following resources:
+Sprint 4 — Otimização, testes e refinamento do MVP
+- Otimização de consultas e tempo de resposta.
+- Testes automatizados.
+- Melhorias de UI/UX.
+- Documentação e onboarding.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+📂 Estrutura do Projeto (simplificada)
+/app
+  /api
+    /chat
+  /auth
+/components
+/lib
+/prisma
+  schema.prisma
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+📦 Como Rodar Localmente
+1. Clonar o repositório
+   git clone https://github.com/seu-usuario/studmed.git
+2. Entrar na pasta
+   cd studmed
+3. Instalar dependências
+   npm install
+4. Configurar variáveis de ambiente
+   cp .env.example .env.local
+5. Rodar o projeto
+   npm run dev
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+📄 Licença
+Este projeto está sob a licença MIT — sinta-se livre para usar e contribuir.
